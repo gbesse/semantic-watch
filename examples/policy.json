@@ -1,0 +1,1 @@
+{"id":"launch-risk","condition":"The product launch is blocked.","model":"jev-1.13.0","onThreshold":0.8,"offThreshold":0.2}
