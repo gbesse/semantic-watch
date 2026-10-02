@@ -19,7 +19,7 @@ node bin/semantic-watch.mjs watch examples/items.json examples/policy.json /tmp/
 
 The fixture converts numeric strings to synthetic probabilities. It demonstrates caching and state transitions, not language understanding. Output paths must be new; watch writes numbered private snapshots to a new directory. Polling defaults to one iteration and is bounded by an explicit count. Ctrl-C stops with an error; completed snapshots remain available.
 
-Install with `npm install github:gbesse/semantic-watch#v0.1.0`.
+Install with `npm install github:gbesse/semantic-watch#v0.1.1`.
 
 ## State transitions
 
@@ -53,6 +53,10 @@ Set `TYPESAFE_API_KEY` and replace `--evaluator …` with `--jev` for actual tex
 ## Development
 
 Run `npm run typecheck`, `npm run check`, `npm test` and `npm run demo`. Tests cover hysteresis, deletion, cache invalidation, source deadlines, atomic checkpoint behavior, CLI artifacts and loopback HTTP. Live Jev quality has not been measured. See [SECURITY.md](SECURITY.md).
+
+## Shareable demo report
+
+Run `npm run demo:report` to capture this repository’s bundled example as one JSON object with the project purpose, version and complete demo output. The command fails if the demo fails, so the report is useful when sharing a reproducible first look or reporting unexpected behavior. The bundled demo’s data and safety boundaries still apply.
 
 ## Where this can grow
 
